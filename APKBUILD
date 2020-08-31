@@ -6,7 +6,7 @@ pkgver=11.0.1
 [ "$CHOST" != "$CTARGET" ] && _target="-$CTARGET_ARCH" || _target=""
 
 pkgname="$pkgname$_target"
-pkgrel=3
+pkgrel=4
 pkgdesc="The GNU Compiler Collection"
 url="https://gcc.gnu.org"
 arch="all"
@@ -610,7 +610,7 @@ gnat() {
 	mv "$pkgdir"/usr/bin/*gnat* "$subpkgdir"/usr/bin/
 }
 
-sha512sums="93e2f12cca67a761dcc6770bb6aeb32b043dff943491daeea6ad05c09e2d7dbb538ea4d4b0d6d85b257f1a531e7cde15eb50114b92a602557c4abadfa80bb615  gcc-11.0.1.tar.xz
+sha512sums="6bda1bd30f8dd9cac06159935684c1d470e8c01f426ff215576b935223f97eff7dd7837c21c212a34419fb602b11060008bde13c4371a5b3e3da16f2fb649c4a  gcc-11.0.1.tar.xz
 ee2d344e912ebaddf71d53ff674ca7ea7837ee65f982a8f088339fd05261e441aace6087f7f936d32b502bff7e375094f48cb90562ab7734c57e1750d3fe2029  0001-posix_memalign.patch
 deaf3ba25614df18b2b9b04244bcc9278c16d98f6fdeac17f7e2c0567be7c2836ab6d21fc9d8f779c672022d25fc278327d6d0d637bc200fadbb8d913ef95581  0002-gcc-poison-system-directories.patch
 eb80ea94e008e33b97c8c0d47e74d639897a13357abbd130e9bff4ae30349b8f788acbaf4caa61f23022a86841c431b8bb639c536aab548dc735470a7c7ccfcf  0003-Turn-on-Wl-z-relro-z-now-by-default.patch
